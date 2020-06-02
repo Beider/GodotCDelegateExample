@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Objects/MouseFollower.tscn" type="PackedScene" id=1]
+
+[node name="Root" type="Node2D"]
+
+[node name="MouseFollower" parent="." instance=ExtResource( 1 )]
+BlinkModifier = 0.5
+
+[node name="MouseFollower2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 796.027, 104.191 )
+scale = Vector2( 0.5, 0.5 )
+MaxSpeed = 500.0
+BlinkModifier = 0.0
+
+[node name="MouseFollower3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 929.01, 491.164 )
+MaxSpeed = 100.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 4.75
+margin_top = 6.64999
+margin_right = 464.75
+margin_bottom = 71.65
+text = "Made by Beider,
+Check my youtube for the accompanying tutorial video:
+https://www.youtube.com/channel/UCM0mBdsjKQ78eGBSSpnQGuQ
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
